@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title> Team Worst Generation  </title>
+    <title > Team Worst Generation  </title>
     <meta charset="UTF-8">
     <link rel="icon" type="image/x-icon" href="files/strawhat.png">
+    <link rel="stylesheet" href="style.css">
   </head>
   
   <body>
     <!-- <header>Worst Gen Meeting 1 Recap</header> -->
     <header>   
-        <h1>Worst Gen Meeting Minutes 1 </h1>
-        <h2> January 20, 2008 </h2>
+        <h1 class="header">Worst Gen Meeting Minutes 1 </h1>
+        <h2 class=""> January 20, 2008 </h2>
         <nav>Sections
             <a href="#Attendees">Attendees </a>
             <a href="#Agenda">Agenda</a>
@@ -25,13 +26,12 @@
     <main>
      
     <section class="MeetMin">
-        <h2>Meeting: Addressing Website Issues</h2>
-
-        <h3>Time and Location </h3>
-            <p>8:40AM, 308 Negra Arroya Lane, ROOM 0108</p>
-        <hr>
-        <h2 id="Attendees">Attendees</h2>
-        <div>
+        <h2 class="header">Meeting: Addressing Website Issues</h2>
+        
+        <h3>Time and Location:8:40AM, 308 Negra Arroya Lane, ROOM 0108 </h3>
+        <hr><hr>
+        <h2 id="Attendees" class="header">Attendees</h2>
+        <div class="list">
             <ul>
                 <li>Alex Hernandez Perez</li>
                 <li>Walter White</li>
@@ -40,10 +40,10 @@
             </ul>
         </div>
 
-        <hr>
+        
 
-        <h2 id="Agenda">Agenda </h2>
-        <div>
+        <h2 id="Agenda" class="header">Agenda </h2>
+        <div class="list">
             <ul>
                 <li>Revenue Summary, Gustavo, 10min</li>
                 <li>Improvements to Site, Jessie, Walter, 20min</li>
@@ -51,9 +51,8 @@
             </ul>
             
         </div>
-        <hr>
-        <h2 id="Updates">Updates on Known Issues (last meeting) </h2>
-        <div>
+        <h2 id="Updates" class="header">Updates on Known Issues (last meeting) </h2>
+        <div class="list">
             <ul>
                 <li>Fixed issue where users would somtimes get <i>"stuck"</i> submitting forms</li>
                 <li>Fixed issues where users would not recieve email notifications </li>
@@ -61,30 +60,26 @@
                 <li>Fixed <i>"Dead Links"</i> </li>
             </ul>
         </div>
-        <hr>
-        <h2>Disscusion Notes/New Issues</h2>
-        <div>
+        
+        <h2 class="header">Disscusion Notes/New Issues</h2>
+        <div class="list">
             <ul>
                 <li> Revenue is up 5% this week, but down by 10% from last week, <em>possibly to due to issues/competitors </em></li>
                 <li> Website load times have been improved by 20%</li>
                 <li> Unlicensed 
-                    <details>
-                        <summary>
-                            <i>"bootleg"</i>
-                        </summary>
-                        <div>Competitors have been selling our product claiming to be us. 
+                    <details><summary><i>"bootleg"</i></summary>
+                    <div id="summary">Competitors have been selling our product claiming to be us. 
                             Please report them and let upper management and legal know as well. Thank you </div>
                     </details>competitors have arrived to the web attemping to be us.</li>
                 <li> Users would like "save for later" feature</li>
                 <li> User want Apple pay support.</li>
                 <li> pizza currently stuck on roof<br>
-                    <img src="files/pizza.jpg" width ="400" height="200" alt="pizza on roof">
+                    <img id="pizza" src="files/pizza.jpg" alt="pizza on roof">
                 </li>
             </ul>
         </div>
-        <hr>
-        <h2 id="Plan">Action plan</h2>
-        <div>
+        <h2 id="Plan"class="header">Action plan</h2>
+        <div class="list">
             <ol>
                 <li> See legal team about with <i>"dealing"</i> with Bootleggers</li>
                 <li> Contact Apple for to introduce Apple pay discuss split earnings</li>
@@ -95,20 +90,20 @@
     </section>
     </main>
         
-    <hr>
-    <video height="240" width="400" controls>
+   
+    <video id="video" controls>
         <source src="files/pizzatoss.mp4" type="video/mp4">
     </video>
     
 
-    <section class="Form"> 
-        <hr>
-        <h2 id="post">Additional notes post meeting</h2>
+    <div class="form"> 
+        <h2 id="post" class="header">Additional notes post meeting</h2>
         <p> Any outstanding issues or updates that were not presented please fill the form. </p>
         <form>
             <fieldset>
+            <div class="box">
             Issue/Comments/concerns:<br>
-                <textarea></textarea><br>
+                <textarea></textarea><br><hr>
                 Select the category of the concern/Note:<br>
                 <input list="type">
                 <datalist id="type">
@@ -117,7 +112,7 @@
                   <option value="Product">
                   <option value="Developmental">
                   <option value="Misc.">
-                </datalist><br>
+                </datalist><br><hr>
                 Team member<select>
                     <option>Alex Hernandez Perez</option>
                     <option>Walter White</option>
@@ -127,24 +122,26 @@
                     <option>Gale</option>
                     <option>Saul Goodman</option>
                 </select><br>
-
+            </div><hr>
                 You were present ?
                 <input type="radio" id="Yes">
                 <label for="Yes">Yes</label>
                 <input type="radio" id="No">
                 <label for="No">No</label>
-                <br>
+                <br><hr>
+
             
                 <input type="checkbox" ><strong>I hereby Certify by selecting this box that the information 
                     submitted is truthful to the fullest extent of my Knowledge. </strong> 
-                <input type="date"><br>
+                <input type="date"><br><hr>
                 Signature:<input type="text">
-                <br><button>Submit</button>
+                <br><button attribute="button">Submit</button>
+        
             </fieldset>
         </form>
 
 
-    </section>
+    </div>
     <hr>
     <footer>
         <p>Worst Generation Inc.
