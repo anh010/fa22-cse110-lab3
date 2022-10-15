@@ -1,0 +1,160 @@
+
+:root{
+    /* root variables for me to reference applies to most of document  */
+  --mainfont: Arial,sans-serif;
+  --smallpad:1rem;
+  --bigpad:2rem;
+  --midpad:medium;
+
+  --textcolor:white; /* name */
+  --backgroundcolor: #333333; /* hex value */
+	--maincolor:rgb(106,91,205); /* rgb */
+  --darker_maincolor:hsl(248, 53%, 30%); /* hsl */
+  }
+  
+  @font-face {
+    /* custom third party font from google */
+    font-family: oswald;
+    src: url(Oswald-VariableFont_wght.ttf);
+  }
+  *{
+    padding:2px;
+
+  }
+
+  title{
+    position:absolute;
+  }
+  body{
+    font-family: var(--mainfont);
+    font-size:large;
+    background-color: var(--backgroundcolor);
+    color:var(--textcolor);
+  }
+  div{
+    text-align: center;
+  }
+  a{
+    color:var(--maincolor);
+  }
+  a:hover {
+    background-color: var(--darker_maincolor);
+    color:white;
+    cursor:crosshair;
+  }
+  a:active{
+    color:red;
+  }
+  footer{
+    display:inline-block;
+    font-size: small;
+  }
+  hr{
+    opacity: 0%;
+  }
+  section{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content:space-between;
+    margin: 1em,1em,1em,1em;
+    grid-area: auto;
+    margin-left: 0%;
+  }
+
+  li{
+    margin-left:1ex;
+    margin-top:1ex;
+    margin-bottom:1ex;
+    margin-right:1ex;
+  }
+  audio{
+    display:block;
+    max-width: 250px;
+    max-height: 150px;
+  }
+
+  video{
+    position:relative;
+  }
+  div > ul {
+    background-color: black;
+  }
+  div > ol {
+    background-color: black;
+  }
+  input ~ #type {
+    color:blueviolet;
+  }
+  div + p{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  div.list{
+    text-decoration: underline;
+  }
+  button[attribute=button]{
+    color:white;
+    background-color: var(--maincolor);
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+.header{
+  -webkit-text-stroke: 1px var(--maincolor);
+  text-decoration:underline;
+  text-decoration-color: var(--maincolor);
+  text-align: center;
+  font-family: oswald;
+  font-size: var(--bigpad);
+  position:relative;
+}
+
+.form{
+  display:flexbox;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-color: var(--maincolor);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 0px;
+  text-align: center;
+  
+}
+
+.box{
+  
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.list{
+  text-align:left;
+  padding:var(--smallpad);
+  border:1px solid var(--maincolor);
+}
+
+#pizza, #video{
+  margin:auto;
+  padding: var(--bigpad);
+  width:10.58cm;
+  height:52.91mm;
+
+}
+#Unlicensed + summary{
+  padding:auto;
+}
+
+#summary{
+  padding-left: 0%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-bottom: 0%;
+  font-style:italic;
+  text-decoration:underline;
+}
+
+
+@media only screen and (max-device-width:700px) {
+  body{
+    background-color:black;
+  }
+}
