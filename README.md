@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-Url to published site: https://anh010.github.io/CSE110Lab2_Starter/
+# Lab 3 
+Url to published site: https://anh010.github.io/fa22-cse110-lab3/
